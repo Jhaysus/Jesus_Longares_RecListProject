@@ -211,7 +211,7 @@ list intersection(list p, list q) {
 
 list list_union(list p, list q) {
     //P and Q are distinct list of atoms
-    //return list of atoms that appear in P and Q but no repitition
+    //return list of atoms that appear in P and Q but no repetition
     if ( is_null(p)) {
         return q;
     }
@@ -276,16 +276,16 @@ bool subset(list p, list q) {
 }
 
 
-list premute(list p) {
-    if (is_null(p)) {
-        return p;
-    }
-    if ( member( car( p), car(premute(p)))) {
-        return premute(cdr(p));
-    }
-    return cons(cons(car(p), null()), append(premute(cdr(p))));
-
-}
+// list premute(list p) {
+//     if (is_null(p)) {
+//         return p;
+//     }
+//     if ( member( car( p), car(premute(p)))) {
+//         return premute(cdr(p));
+//     }
+//     return cons(cons(car(p), null()), append(premute(cdr(p))));
+//
+// }
 
 
 
